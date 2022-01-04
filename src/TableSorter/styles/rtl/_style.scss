@@ -1,0 +1,16 @@
+/* ======================================================
+   <!-- Table Sorter -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+//The basic style uses the Table component
+@import '@/components/Table/styles/rtl/_style.scss';
+
+.rtl .poemui-table-sorter {
+
+	&::after {
+		margin-left: auto;
+		margin-right: .5rem;
+	}
+
+}

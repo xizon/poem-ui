@@ -1,0 +1,46 @@
+/* ======================================================
+   <!-- Table Sorter -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+//The basic style uses the Table component
+@import '@/components/Table/styles/_style.scss';
+
+.poemui-table-sorter {
+	cursor: pointer;
+
+	svg {
+		margin-left: .5rem;
+	}
+
+}
+
+
+.js-poemui-newsort {
+	animation: poemui-cssAnim--newsort .5s linear 1 forwards;
+	opacity: 0;
+}
+
+@for $i from 1 to 100 {
+
+	.js-poemui-newsort:nth-child(#{$i+1}) {
+		animation-delay: #{$i*100}ms;
+	}
+}
+
+
+
+@keyframes poemui-cssAnim--newsort {
+	0%   {
+		opacity: 0;
+		transform: translateX(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+

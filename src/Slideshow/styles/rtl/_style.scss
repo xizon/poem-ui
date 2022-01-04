@@ -1,0 +1,69 @@
+/* ======================================================
+   <!-- Slideshow (Basic) -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+/*
+ * 1. Initialize the slider style
+ * 2. Pagination dots
+ * 3. Next/Prev buttons
+*/
+
+
+/*
+ ---------------------------
+ 1. Initialize the slider style
+ ---------------------------
+ */
+.rtl .poemui-slideshow {
+
+	.poemui-slideshow__inner {
+
+		.poemui-slideshow__item {
+			left: auto;
+			right: 0;
+
+		}
+
+	}
+
+
+}
+
+/*
+ ---------------------------
+ 2. Pagination dots
+ ---------------------------
+ */
+ .rtl .poemui-slideshow__pagination {
+
+	ul {
+		left: auto;
+		right: 0;
+
+	}
+
+
+
+}
+
+/*
+ ---------------------------
+ 3. Next/Prev buttons
+ ---------------------------
+ */
+ .rtl .poemui-slideshow__arrows {
+
+	.poemui-slideshow__arrows--prev {
+		left: auto;
+		right: 15px;
+
+	}
+	.poemui-slideshow__arrows--next {
+		right: auto;
+		left: 15px;
+		text-align: left;
+
+	}
+
+}

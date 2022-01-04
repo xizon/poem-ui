@@ -1,0 +1,408 @@
+/* ======================================================
+   <!-- Table -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+/*
+ * 1. Generic
+*/
+
+
+/*
+ ---------------------------
+ 1. Generic
+ ---------------------------
+ */
+$table-border-color: #EEEEEE;
+$table-border-headerbg: #FAFAFA;
+$table-alternant-bg: #FAFAFA;
+
+table.poemui-table,
+.poemui-table table {
+
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	border: 1px solid $table-border-color;
+	width: 100%;
+	border-color: $table-border-color;
+
+	caption {
+		padding: 0.875rem 0;
+	}
+
+
+	th,
+	td {
+		border-color: $table-border-color;
+		border-left: 1px solid $table-border-color;
+		border-width: 0 0 0 1px;
+		margin: 0;
+		overflow: visible;
+		padding: 0.5rem 0.75rem;
+		vertical-align: top;
+
+
+	}
+
+	thead {
+		background: $table-border-headerbg;
+		vertical-align: bottom;
+
+		th {
+			text-align: inherit; /* Required */
+
+			&.poemui-t-r {
+				text-align: right;
+			}
+
+			&.poemui-t-l {
+				text-align: left;
+			}
+
+
+			&.poemui-t-c {
+				text-align: center;
+			}
+
+			/* The breakpoint is the same as bootstrap 4 */
+			/*
+			--breakpoint-xs:0;
+			--breakpoint-sm:576px;
+			--breakpoint-md:768px;
+			--breakpoint-lg:992px;
+			--breakpoint-xl:1200px;
+			*/
+			@media all and (max-width: 576px) {
+				&.poemui-t-r--sm {
+					text-align: right;
+				}
+
+				&.poemui-t-l--sm {
+					text-align: left;
+				}
+				&.poemui-t-c--sm {
+					text-align: center;
+				}
+			}
+
+			@media all and (max-width: 768px) {
+				&.poemui-t-r--md {
+					text-align: right;
+				}
+
+				&.poemui-t-l--md {
+					text-align: left;
+				}
+				&.poemui-t-c--md {
+					text-align: center;
+				}
+			}
+
+			@media all and (max-width: 992px) {
+				&.poemui-t-r--lg {
+					text-align: right;
+				}
+
+				&.poemui-t-l--lg {
+					text-align: left;
+				}
+				&.poemui-t-c--lg {
+					text-align: center;
+				}
+			}
+
+
+			@media all and (max-width: 1200px) {
+				&.poemui-t-r--xl {
+					text-align: right;
+				}
+
+				&.poemui-t-l--xl {
+					text-align: left;
+				}
+				.poemui-t-c--xl {
+					text-align: center;
+				}
+			}
+
+
+		}
+	}
+
+	tfoot {
+		border: 1px solid $table-border-color;
+	}
+
+
+	td {
+		background-color: transparent;
+
+	}
+
+
+
+}
+
+/*-- Table Effect by Default --*/
+/* Compatible with  Uix Shortcodes (WordPress Plugin) and Block Button Link */
+.poemui-table a:not(.poemui-sc-btn):not(.wp-block-button__link):not(.poemui-btn) {
+    color: $highlight-color1;
+}
+
+.poemui-table a:not(.poemui-sc-btn):not(.wp-block-button__link):not(.poemui-btn):hover {
+    color: $highlight-color2;
+    text-decoration: underline;
+}
+
+.poemui-table a:not(.poemui-sc-btn):not(.wp-block-button__link):not(.poemui-btn):hover img {
+    text-decoration: none;
+}
+
+
+@media all and (max-width: 768px) {
+
+	table.poemui-table.is-responsive,
+	.poemui-table.is-responsive table {
+
+		thead {
+		    display: none;
+		}
+		tbody {
+
+			tr {
+				@include outer-shadow( 'light' );
+				margin-bottom: 1rem;
+				display: block;
+			}
+
+			tr:nth-of-type(even) {
+				//background-color: $table-alternant-bg;
+			}
+
+			td {
+				display: block;
+
+
+
+				&::before {
+					content: attr(data-table);
+					display: block;
+					float: left;
+					width: 40%;
+					font-weight: bold;
+					border-right: 1px solid $table-border-color;
+					margin-right: 0.5rem;
+				}
+
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+			}
+
+		}
+
+
+	}
+
+
+	/* With scroll bars */
+	.js-poemui-table--responsive-scrolled table,
+	table.js-poemui-table--responsive-scrolled {
+		display: block;
+		width: 100%;
+		border-bottom: 0 !important;
+		border-left: 0 !important;
+		border-right: 0 !important;
+		overflow: auto;
+
+
+		thead {
+			display: block;
+			float: left;
+			width: 100px;
+			border-bottom: 1px solid $table-border-color;
+
+			th {
+				display: block;
+
+				&:not(last-child) {
+					border-bottom: 0;
+				}
+
+			}
+		}
+		tbody {
+			width: calc(100% - 100px);
+			display: block;
+			float: left;
+			overflow-x: scroll;
+			border-bottom: 1px solid $table-border-color;
+			border-right: 1px solid $table-border-color;
+		}
+		thead tr,
+		tbody tr {
+			display: block;
+		}
+		th,
+		tbody td {
+			box-sizing: border-box;
+			overflow-x: hidden;
+			overflow-y: auto;
+
+			&:first-child {
+				border-top: 0;
+			}
+
+			&:not(last-child) {
+				border-bottom: 0;
+				border-right: 0;
+			}
+
+		}
+
+
+		tbody tr {
+			display: table-cell;
+
+		}
+
+		tbody td {
+		    display: block;
+		}
+
+
+
+	}
+
+}
+
+
+table.poemui-table--bordered,
+.poemui-table--bordered table {
+
+	border: 1px solid $table-border-color;
+	border-collapse: collapse;
+	width: 100%;
+
+
+	td,
+	th {
+		border: 1px solid $table-border-color;
+		padding: 0.6875rem;
+	}
+
+}
+
+table.poemui-table--noborder,
+.poemui-table--noborder table {
+	border: none;
+}
+
+table.poemui-table--top-noborder,
+.poemui-table--top-noborder table {
+	td {
+		border-top: none;
+	}
+}
+
+table.poemui-table--bottom-noborder,
+.poemui-table--bottom-noborder table {
+	td {
+		border-bottom: none;
+	}
+}
+
+table.poemui-table--alternant-row,
+.poemui-table--alternant-row table {
+	tbody tr:nth-child(even) {
+		background-color: $table-alternant-bg;
+	}
+}
+
+table.poemui-table--alternant-col,
+.poemui-table--alternant-col table {
+	
+    tbody tr td:first-child {
+		color: #fff;
+	}
+
+	col:nth-child(odd) {
+		background-color: $table-alternant-bg;
+	}
+	
+
+	col:first-child {
+		background-color: #000;
+	}
+
+}
+
+table.poemui-table--striped tr:nth-child(2n-1) td,
+.poemui-table--striped table tr:nth-child(2n-1) td {
+	background-color: $table-border-headerbg;
+}
+
+table.poemui-table--per-line,
+.poemui-table--per-line table {
+
+	td {
+		border-bottom: 1px solid $table-border-color;
+		border-width: 0 0 1px;
+	}
+
+
+	tbody tr:last-child td {
+		border-bottom-width: 0;
+	}
+
+}
+
+table.is-horizontal,
+.is-horizontal table {
+
+	td {
+		border-bottom: 1px solid $table-border-color;
+		border-width: 0 0 1px;
+	}
+
+	tbody tr:last-child td {
+		border-bottom-width: 0;
+	}
+
+	th {
+
+		border-bottom: 1px solid $table-border-color;
+	}
+
+}
+
+
+@media all and (max-width: 768px) {
+
+
+	table.poemui-table--per-line.is-responsive,
+	.poemui-table--per-line.is-responsive table {
+
+		tbody tr:last-child td {
+			border-bottom-width: 1px;
+		}
+
+	}
+
+	table.is-horizontal.is-responsive,
+	.is-horizontal.is-responsive table {
+
+		tbody tr:last-child td {
+			border-bottom-width: 1px;
+		}
+
+
+	}
+
+}
+

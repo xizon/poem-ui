@@ -1,0 +1,14 @@
+/* ======================================================
+   <!-- ToolTip -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+
+.rtl .poemui-tooltip {
+
+	> div {
+		text-align: right;
+
+	}
+
+}

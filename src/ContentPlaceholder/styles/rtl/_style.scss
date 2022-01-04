@@ -1,0 +1,27 @@
+/* ======================================================
+   <!-- Content Placeholder -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+
+.rtl .poemui-content-placeholder {
+
+	.poemui-content-placeholder__thumbSlot {
+		float: right;
+
+		~ .poemui-content-placeholder__textSlot {
+			margin-left: auto;
+			margin-right: 20px;
+			float: right;
+		}
+
+	}
+
+
+	.uix-content-placeholder__view--aspectRatio {
+		.poemui-content-placeholder__thumbSlot {
+			float: none;
+		}
+	}
+
+}

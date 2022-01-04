@@ -1,0 +1,607 @@
+/* ======================================================
+    <!-- Form -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+@import '_variable-and-mixin.scss';
+
+
+/*
+ * 1. Controls
+ * 2. Upload
+ * 3. Group
+ * 4. Custom Select
+ * 5. Custom Radio, Toggle And Checkbox
+ * 6. Custom Input Number
+ * 7. Multiple Selector
+ * 8. Single Selector
+ * 9. Search of Widget
+*/
+
+$control-sub-color: #dce4e8;
+
+@mixin select-arrow-rtl( $top, $left ){
+	border-left: 0;
+	right: auto;
+	left: $left;
+}
+
+
+
+/*
+ ---------------------------
+ 1. Controls
+ ---------------------------
+ */
+
+/* Default Controls */
+.rtl .poemui-controls:not(.poemui-controls__toggle):not(.poemui-controls__checkbox):not(.poemui-controls__radio):not(.poemui-controls__select) {
+
+	text-align: right;
+
+
+	&.poemui-controls__side {
+		margin-left: auto;
+		margin-right: .2rem;
+	}
+
+
+	&.poemui-controls__short-s {
+
+		input:not([type="checkbox"]):not([type="radio"]) {
+			margin-right: auto;
+			margin-left: .5rem;
+		}
+
+
+	}
+
+	&.poemui-controls__short-m {
+
+		input:not([type="checkbox"]):not([type="radio"]) {
+			margin-right: auto;
+			margin-left: .5rem;
+		}
+	}
+
+
+	&.poemui-controls__short-l {
+		input:not([type="checkbox"]):not([type="radio"]) {
+			margin-right: auto;
+			margin-left: .5rem;
+		}
+
+	}
+
+
+	label {
+		left: auto;
+		right: 0.875rem;
+        transform-origin: right top;
+
+	}
+
+
+
+	/*-- Select Arrow --*/
+	.poemui-controls__arrow {
+		right: auto;
+		left: 0.875rem;
+	}
+
+	/*-- Radio --*/
+	&.poemui-controls__normal-radio {
+
+		label {
+			padding-left: auto !important;
+			padding-right: 1.25rem !important;
+			right: auto !important;
+		}
+
+	}
+
+	/*-- Select --*/
+	&.poemui-controls__normal-select {
+
+		margin-right: auto;
+		margin-left: 1.65rem;
+
+
+
+		.poemui-controls__arrow {
+			left: -1rem;
+		}
+
+	}
+
+
+
+
+    /*-- Form With Icon --*/
+	&.is-iconic {
+		label {
+		    left: auto;
+			right: #{$control-padding-side + $control-icon-placeholder};
+		}
+
+		i {
+			left: auto;
+			right: 1rem;
+
+			&::after {
+				left: auto;
+				right: 1.2rem;
+			}
+
+		}
+
+		input:not([type="checkbox"]):not([type="radio"]) {
+			padding-left: auto;
+			padding-right: #{$control-padding-side + $control-icon-placeholder};
+
+
+		}
+
+		textarea,
+		button:not(.poemui-btn),
+		select {
+			padding-left: auto;
+			padding-right: #{$control-padding-side + $control-icon-placeholder};
+		}
+
+
+
+		&.is-reversed {
+
+			label {
+				left: auto;
+				right: $control-padding-side;
+
+			}
+
+			i {
+				left: 1rem;
+				right: auto;
+
+				&::after {
+					left: 1.2rem;
+					right: auto;
+				}
+
+			}
+
+
+			input:not([type="checkbox"]):not([type="radio"]) {
+				padding-right: $control-padding-side;
+                padding-left: #{$control-padding-side + $control-icon-placeholder};
+
+			}
+
+			textarea,
+			button:not(.poemui-btn),
+			select {
+				padding-right: $control-padding-side;
+                padding-left: #{$control-padding-side + $control-icon-placeholder};
+			}
+
+		}
+
+
+
+	}
+
+
+
+	/*-- WordPress Style --*/
+	.req-icon {
+		right: auto;
+		left: 0.721875rem;
+	}
+
+
+
+}
+
+
+
+
+/*
+ ---------------------------
+ 2. Upload
+ ---------------------------
+ */
+
+.rtl .poemui-controls__file-container {
+
+	.poemui-controls__file-trigger {
+
+		i {
+			margin-right: auto;
+			margin-left: .5rem;
+		}
+	}
+
+
+	input[type="file"] {
+		left: auto;
+		right: 0;
+	}
+
+
+}
+
+
+
+/* HTML5 drag and drop upload control */
+.rtl .poemui-controls__file-field-container {
+
+	.poemui-controls__file-field-trigger {
+
+		> div {
+
+			input {
+				left: auto;
+				right: 0;
+
+				&::before {
+					left: auto;
+					right: 0;
+				}
+
+			}
+
+
+		}
+
+
+	}
+
+}
+
+
+
+/*
+ ---------------------------
+ 3. Group
+ ---------------------------
+ */
+
+
+.rtl .poemui-controls__merge {
+
+
+	i {
+		margin-right: auto;
+		margin-left: .5rem;
+
+	}
+
+
+	button {
+		margin-left: auto;
+		margin-right: -5px;
+	}
+
+
+	&.is-pill {
+		input {
+			border-radius: 0 50px 50px 0;
+		}
+
+		button {
+			border-radius: 50px 0 0 50px;
+		}
+
+	}
+
+    /*-- Form With Icon --*/
+	&.is-iconic {
+
+		input {
+			padding-left: auto;
+			padding-right: #{$control-padding-side + $control-icon-placeholder};
+
+		}
+
+
+		i {
+			left: auto;
+			right: 1rem;
+
+			&::after {
+				left: auto;
+				right: 1.2rem;
+			}
+
+		}
+
+
+		&.is-reversed {
+			input {
+				padding-left: auto;
+				padding-right: calc(3rem - #{$control-padding-side});
+
+			}
+
+
+			i {
+				right: auto;
+				left: 1rem;
+
+				&::after {
+					right: auto;
+					left: 1.2rem;
+				}
+
+			}
+
+		}
+
+
+	}
+
+}
+
+
+
+/*
+ ---------------------------
+ 4. Custom Select
+ ---------------------------
+ */
+.rtl .poemui-controls__select {
+	margin-right: auto;
+	margin-left: .3rem;
+
+	&.js-poemui-new {
+		text-align: right; /* Required */
+	}
+
+
+}
+
+.rtl .poemui-controls__select-wrapper {
+
+
+	&:not(.poemui-controls--line).is-disabled {
+
+		/* Mask used to prohibit selection */
+		&::before {
+			left: auto;
+			right: 0;
+
+		}
+
+	}
+
+
+	.poemui-controls__select-trigger {
+		padding: #{$control-padding-height} $control-padding-side $control-padding-height #{$control-padding-side+1.5};
+
+		&::after {
+			@include select-arrow-rtl( -.275rem, 1rem );
+		}
+
+
+	}
+
+
+
+	.poemui-controls__select__option-container {
+		left: auto;
+		right: 0;
+
+
+		&::before {
+			left: auto;
+			right: 25px;
+			border-left: 1px solid transparent;
+			border-right: 1px solid $control-sub-color;
+		}
+
+	}
+
+
+	.poemui-controls__select--top {
+		/* Shown from above */
+		.poemui-controls__select__option-container {
+
+
+			&::after {
+				right: auto;
+				left: 25px;
+				border-left: 1px solid $control-sub-color;
+				border-right: 1px solid transparent;
+
+			}
+
+
+		}
+
+	}
+
+	.poemui-controls__select__option {
+
+		&:first-of-type {
+		    border-radius:  0 0 2px 2px;
+		}
+		&:last-of-type {
+			border-radius: 2px 2px 0 0;
+		}
+
+	}
+
+
+}
+
+
+
+/*
+ ---------------------------
+ 5. Custom Radio, Toggle And Checkbox
+ ---------------------------
+ */
+.rtl .poemui-controls__radio {
+
+	text-align: right;
+
+	label {
+		right: auto;
+	}
+
+
+	.poemui-controls__radio-trigger {
+		margin-right: auto;
+		margin-left: 5px;
+
+		&::before {
+			left: auto;
+			margin-left: auto;
+			right: 50%;
+			margin-right: -3px;
+		}
+	}
+}
+
+
+
+.rtl .poemui-controls__toggle {
+
+	label {
+		text-align: right; /* Required */
+	}
+
+
+
+	input[type="checkbox"] {
+		display: none;
+
+		&:checked + .poemui-controls__toggle-trigger {
+			margin-left: auto;
+			margin-right: 8px;
+		}
+	}
+
+	.poemui-controls__toggle-trigger {
+		margin: 0.5rem 0 0.5rem .5rem;
+
+		&::before {
+			left: auto;
+			right: -50px;
+
+		}
+
+		&::after {
+			right: auto;
+			left: -50px;
+
+		}
+
+	}
+}
+
+.rtl .poemui-controls__checkbox {
+
+	label {
+		text-align: right; /* Required */
+	}
+
+
+	.poemui-controls__checkbox-trigger {
+		margin: #{$control-padding-height} 0 #{$control-padding-height} .5rem;
+
+		&::before,
+		&::after {
+			left: auto;
+			right: 4px;
+
+
+		}
+
+	}
+}
+
+
+
+/*
+ ---------------------------
+ 6. Custom Input Number
+ ---------------------------
+ */
+.rtl .poemui-controls__number {
+
+
+	.poemui-controls__number__btn {
+		border-left: none;
+		border-right: 1px solid $control-sub-color;
+		right: auto;
+		left: 1px;
+
+	}
+
+}
+
+
+
+
+/*
+ ---------------------------
+ 7. Multiple Selector
+ ---------------------------
+ */
+.rtl .poemui-controls__multi-sel {
+
+	float: right;
+
+	> span {
+		margin-right: auto;
+		margin-left: 1rem;
+
+		i {
+			right: auto;
+			left: -8px;
+		}
+
+
+	}
+
+
+}
+
+
+
+
+/*
+ ---------------------------
+ 8. Single Selector
+ ---------------------------
+ */
+
+.rtl .poemui-controls__single-sel {
+
+	float: right;
+
+	> span {
+		margin-right: auto;
+		margin-left: 1rem;
+
+	}
+
+}
+
+
+
+
+/*
+ ---------------------------
+ 9. Search of Widget
+ ---------------------------
+ */
+.rtl .poemui-search-box {
+
+	.poemui-search-box__submit {
+		right: auto;
+		left: 0.875rem;
+	}
+
+}
+

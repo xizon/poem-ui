@@ -1,0 +1,147 @@
+/* ======================================================
+    <!-- Form  ( Material Design Theme )-->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+@import '_variable-and-mixin.scss';
+
+/*
+ * 1. Controls
+ * 4. Custom Select
+*/
+
+/*
+ ---------------------------
+ 1. Controls
+ ---------------------------
+ */
+@mixin create-line-rtl() {
+    .rtl .poemui-controls__basic-bar,
+	.rtl .poemui-controls__bar {
+		left: auto;
+        right: 0;
+	}
+}
+
+
+/* Default Controls */
+.rtl .poemui-controls:not(.poemui-controls__toggle):not(.poemui-controls__checkbox):not(.poemui-controls__radio):not(.poemui-controls__select) {
+
+    //Create Line Effect on Click
+    @include create-line-rtl();
+
+}
+
+/* Create Line Effect on Click */
+.rtl .poemui-controls.poemui-controls--line {
+
+
+	label {
+		left: auto !important;
+		right: - 0.25rem !important;
+
+		&.is-active {
+			transform-origin: right top;
+			transform: translateX(1.75rem) scale(.875);
+
+		}
+
+
+	}
+
+	/*-- Form With Icon --*/
+	&.is-iconic {
+        
+
+		label {
+            left: auto !important;
+			right: #{$control-padding-side + $control-icon-placeholder} !important;
+
+			&.is-active {
+				transform: translateX(4.09375rem) scale(.875);
+			}
+		}
+
+
+        
+        
+		&.is-reversed {
+            
+            
+ 			input:not([type="checkbox"]):not([type="radio"]) {
+				padding-right: 0 !important;
+
+			}
+
+			textarea,
+			button:not(.poemui-btn),
+			select {
+				padding-right: 0 !important;
+			}
+ 
+            
+
+			label {
+                left: auto !important;
+				right: -0.25rem !important;
+
+				&.is-active {
+					transform: translateX(1.75rem) scale(.875);
+				}
+			}
+		}
+
+
+	}
+
+
+	/*-- Select --*/
+	&.poemui-controls__normal-select {
+
+	
+		select {
+			padding-right: 0 !important;
+            padding-left: #{$control-padding-side + 1} !important; 
+		}
+
+
+	}
+
+    
+
+}
+
+
+/*
+ ---------------------------
+ 4. Custom Select
+ ---------------------------
+ */
+
+.rtl .poemui-controls__select-wrapper {
+
+	&.poemui-controls--line.is-disabled {
+
+		/* Mask used to prohibit selection */
+		&::before {
+			left: auto;
+            right: 0;
+
+		}
+
+	}
+
+
+	.poemui-controls--line  {
+		.poemui-controls__select-trigger {
+			padding-right: 0;
+
+		}
+
+       
+	}
+
+
+}
+
+
+

@@ -1,0 +1,20 @@
+/* ======================================================
+     <!-- Image Shapes -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+
+.poemui-shape-img {
+
+	opacity: 0;
+	@include transition-default();
+
+	&.is-active {
+		opacity: 1;
+	}
+
+	img {
+		display: none;
+	}
+}
+

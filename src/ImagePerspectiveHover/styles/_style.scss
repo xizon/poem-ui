@@ -1,0 +1,21 @@
+/* ======================================================
+   <!-- Image Perspective Hover -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+
+.poemui-perspective-hover {
+
+	/* Require more than 500, compatible firefox height */
+	perspective: 700px;
+
+	> div {
+		display: inline-block;
+		@include transition-default(); 
+	}
+
+	img {
+		@include transition-default(); 
+	}
+
+}

@@ -1,0 +1,82 @@
+/* ======================================================
+    <!-- Accordion -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+.poemui-accordion {
+	dl {
+		position: relative;
+		background: white;
+		transition: .1s ease-in-out;
+
+		dt {
+			padding: 1rem;
+			cursor: pointer;
+
+			a {
+				display: block;
+			}
+
+
+			svg {
+				position: absolute;
+				display: block;
+				right: 1rem;
+				top: 1rem;
+				transition: .1s ease-in-out;
+			}
+		}
+
+		dd {
+			width: calc(100% - 2rem);
+			overflow: hidden;
+			height: 0;
+
+			font-size: 0.875rem;
+
+			> div {
+				padding: 1rem;
+			}
+
+		}
+
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			pointer-events: none;
+			border: 1px solid rgba(0, 0, 0, .01);
+			@include outer-shadow( 'light' );
+		}
+
+
+		/* Actived status */
+		&.is-active {
+			height: auto;
+			margin: 1rem 0;
+			@include outer-shadow( 'regular' );
+
+			dt {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+				svg {
+					transform: rotate(90deg);
+				}
+
+			}
+
+
+		}
+
+
+
+	}
+
+
+
+}

@@ -1,0 +1,155 @@
+/* ======================================================
+   <!-- Table -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+
+/*
+ * 1. Generic
+*/
+
+$table-border-color: #d6d5d5;
+
+/*
+ ---------------------------
+ 1. Generic
+ ---------------------------
+ */
+.rtl table.poemui-table,
+.rtl .poemui-table table {
+
+	th,
+	td {
+		border-left: none;
+		border-right: 1px solid $table-border-color;
+
+
+	}
+
+	thead {
+
+		th {
+
+			&.poemui-t-r {
+				text-align: left;
+			}
+
+			&.poemui-t-l {
+				text-align: right;
+			}
+
+
+			/* The breakpoint is the same as bootstrap 4 */
+			/*
+			--breakpoint-xs:0;
+			--breakpoint-sm:576px;
+			--breakpoint-md:768px;
+			--breakpoint-lg:992px;
+			--breakpoint-xl:1200px;
+			*/
+			@media all and (max-width: 576px) {
+				&.poemui-t-r--sm {
+					text-align: left;
+				}
+
+				&.poemui-t-l--sm {
+					text-align: right;
+				}
+			}
+
+			@media all and (max-width: 768px) {
+				&.poemui-t-r--md {
+					text-align: left;
+				}
+
+				&.poemui-t-l--md {
+					text-align: right;
+				}
+			}
+
+			@media all and (max-width: 992px) {
+				&.poemui-t-r--lg {
+					text-align: left;
+				}
+
+				&.poemui-t-l--lg {
+					text-align: right;
+				}
+			}
+
+
+			@media all and (max-width: 1200px) {
+				&.poemui-t-r--xl {
+					text-align: left;
+				}
+
+				&.poemui-t-l--xl {
+					text-align: right;
+				}
+			}
+
+
+		}
+	}
+
+
+
+
+}
+
+
+
+@media all and (max-width: 768px) {
+
+	.rtl table.poemui-table.is-responsive,
+	.rtl .poemui-table.is-responsive table {
+
+		tbody {
+
+			td {
+
+				&::before {
+					float: right;
+					border-left: 1px solid $table-border-color;
+					margin-right: auto;
+					margin-left: 0.5rem;
+
+				}
+
+			}
+
+		}
+
+
+	}
+
+
+	/* With scroll bars */
+	.rtl .js-poemui-table--responsive-scrolled table,
+	.rtl table.js-poemui-table--responsive-scrolled {
+
+
+		thead {
+			float: right;
+
+
+		}
+		tbody {
+			float: right;
+			border-left: 1px solid $table-border-color;
+		}
+
+		th,
+		tbody td {
+
+			&:not(last-child) {
+				border-left: 0;
+			}
+
+		}
+
+
+	}
+
+
+}

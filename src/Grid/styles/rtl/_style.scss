@@ -1,0 +1,39 @@
+/* ======================================================
+   <!-- Grid -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+
+.rtl [class*='poemui-core-grid__col-'] {
+	float: right;
+}
+
+@mixin poemuiCoreGridGenerateRTL( $classname: '.poemui-core-grid', $pad: 15px ) {
+	// @include poemuiCoreGridGenerate( '.poemui-core-grid', 15px );
+	
+    @if ( $classname != '' ) {
+	
+		.rtl #{$classname} {
+
+			[class*='poemui-core-grid__col-'] {
+				padding-right: auto;
+				padding-left: #{$pad};
+
+				.poemui-core-grid__row &:last-of-type {
+					padding-left: 0;
+				}
+			}
+
+
+		}
+
+		
+	}
+	
+}
+
+
+@include poemuiCoreGridGenerateRTL( '.poemui-core-grid', 15px );
+
+
+

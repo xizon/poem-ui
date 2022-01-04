@@ -1,0 +1,11 @@
+/* ======================================================
+   <!-- LightBox -->
+/* ====================================================== */
+@import '@/components/_utils/styles/_variable-and-mixin.scss';
+
+
+.rtl .poemui-lightbox__close {
+	right: auto;
+	left: 15px;
+
+}
