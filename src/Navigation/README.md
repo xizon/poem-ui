@@ -10,7 +10,7 @@
 
 ### Navigation
 ```js
-import Navigation from 'poem-ui/Navigation';
+import { Navigation } from 'poem-ui/Navigation';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ JSON configuration properties of the `mega`:
 
 ```js
 import React from 'react';
-import Navigation from 'poem-ui/Navigation';
+import { Navigation } from 'poem-ui/Navigation';
 import { NavLink } from 'react-router-dom';
 
 const menuListData = [

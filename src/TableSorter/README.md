@@ -11,7 +11,7 @@
 
 ### Table Sorter
 ```js
-import TableSorter from 'poem-ui/TableSorter';
+import { TableSorter } from 'poem-ui/TableSorter';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -39,7 +39,7 @@ JSON configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import TableSorter from 'poem-ui/TableSorter';
+import { TableSorter } from 'poem-ui/TableSorter';
 
 
 

@@ -10,7 +10,7 @@
 
 ### Toaster
 ```js
-import Toaster from 'poem-ui/Toaster';
+import { Toaster } from 'poem-ui/Toaster';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -33,7 +33,7 @@ Array configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import Toaster from 'poem-ui/Toaster';
+import { Toaster } from 'poem-ui/Toaster';
 
 export default () => {
   return (

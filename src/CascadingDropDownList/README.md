@@ -10,7 +10,7 @@
 
 ### Cascading DropDown List
 ```js
-import CascadingDropDownList from 'poem-ui/CascadingDropDownList';
+import { CascadingDropDownList } from 'poem-ui/CascadingDropDownList';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -140,7 +140,7 @@ A successful response returns the details of the callback such as Sample Request
 
 ```js
 import React from 'react';
-import CascadingDropDownList from 'poem-ui/CascadingDropDownList';
+import { CascadingDropDownList } from 'poem-ui/CascadingDropDownList';
 
 export default () => {
   return (

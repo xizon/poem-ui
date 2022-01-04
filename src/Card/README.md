@@ -11,7 +11,7 @@
 
 ### Card
 ```js
-import Card from 'poem-ui/Card';
+import { Card } from 'poem-ui/Card';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ import Card from 'poem-ui/Card';
 
 ```js
 import React from 'react';
-import Card from 'poem-ui/Card';
+import { Card } from 'poem-ui/Card';
 
 
 export default () => {

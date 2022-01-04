@@ -11,7 +11,7 @@
 
 ### Scroll Reveal
 ```js
-import ScrollReveal from 'poem-ui/ScrollReveal';
+import { ScrollReveal } from 'poem-ui/ScrollReveal';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -39,7 +39,7 @@ JSON configuration properties of the `config`:
 
 ```js
 import React from 'react';
-import ScrollReveal from 'poem-ui/ScrollReveal';
+import { ScrollReveal } from 'poem-ui/ScrollReveal';
 
 
 export default () => {

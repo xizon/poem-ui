@@ -10,7 +10,7 @@
 
 ### Parallax
 ```js
-import Parallax from 'poem-ui/Parallax';
+import { Parallax } from 'poem-ui/Parallax';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ import Parallax from 'poem-ui/Parallax';
 
 ```js
 import React from 'react';
-import Parallax from 'poem-ui/Parallax';
+import { Parallax } from 'poem-ui/Parallax';
 
 export default () => {
   return (

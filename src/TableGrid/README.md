@@ -10,7 +10,7 @@
 
 ### Table Grid
 ```js
-import TableGrid from 'poem-ui/TableGrid';
+import { TableGrid } from 'poem-ui/TableGrid';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ JSON configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import TableGrid from 'poem-ui/TableGrid';
+import { TableGrid } from 'poem-ui/TableGrid';
 
 
 const data1 = {

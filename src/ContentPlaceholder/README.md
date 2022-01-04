@@ -10,7 +10,7 @@
 
 ### Content Placeholder
 ```js
-import ContentPlaceholder from 'poem-ui/ContentPlaceholder';
+import { ContentPlaceholder } from 'poem-ui/ContentPlaceholder';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -22,7 +22,7 @@ import ContentPlaceholder from 'poem-ui/ContentPlaceholder';
 
 ```js
 import React from 'react';
-import ContentPlaceholder from 'poem-ui/ContentPlaceholder';
+import { ContentPlaceholder } from 'poem-ui/ContentPlaceholder';
 
 export default () => {
   return (

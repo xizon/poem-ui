@@ -10,7 +10,7 @@
 
 ### Lightbox
 ```js
-import Lightbox from 'poem-ui/Lightbox';
+import { Lightbox } from 'poem-ui/Lightbox';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ import Lightbox from 'poem-ui/Lightbox';
 
 ```js
 import React from 'react';
-import Lightbox from 'poem-ui/Lightbox';
+import { Lightbox } from 'poem-ui/Lightbox';
 
 export default () => {
   return (

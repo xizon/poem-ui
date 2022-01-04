@@ -10,7 +10,7 @@
 
 ### Pagination
 ```js
-import Pagination from 'poem-ui/Pagination';
+import { Pagination } from 'poem-ui/Pagination';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ import Pagination from 'poem-ui/Pagination';
 
 ```js
 import React from 'react';
-import Pagination from 'poem-ui/Pagination';
+import { Pagination } from 'poem-ui/Pagination';
 
 
 function gotoPageNumber( number ) {

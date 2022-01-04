@@ -10,7 +10,7 @@
 
 ### Progress Bar
 ```js
-import ProgressBar from 'poem-ui/ProgressBar';
+import { ProgressBar } from 'poem-ui/ProgressBar';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ import ProgressBar from 'poem-ui/ProgressBar';
 
 ```js
 import React from 'react';
-import ProgressBar from 'poem-ui/ProgressBar';
+import { ProgressBar } from 'poem-ui/ProgressBar';
 
 export default () => {
   return (

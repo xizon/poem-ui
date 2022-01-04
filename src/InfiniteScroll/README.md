@@ -10,7 +10,7 @@
 
 ### Infinite Scroll
 ```js
-import InfiniteScroll from 'poem-ui/InfiniteScroll';
+import { InfiniteScroll } from 'poem-ui/InfiniteScroll';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -88,7 +88,7 @@ Page 2:
 
 ```js
 import React from 'react';
-import InfiniteScroll from 'poem-ui/InfiniteScroll';
+import { InfiniteScroll } from 'poem-ui/InfiniteScroll';
 
 const Item = ({ id, img, title, email }) => {
     return (

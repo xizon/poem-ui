@@ -10,7 +10,7 @@
 
 ### Back To Top
 ```js
-import BackToTop from 'poem-ui/BackToTop';
+import { BackToTop } from 'poem-ui/BackToTop';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ Scroll the page down to preview. The button is in the bottom right corner of the
 
 ```js
 import React from 'react';
-import BackToTop from 'poem-ui/BackToTop';
+import { BackToTop } from 'poem-ui/BackToTop';
 
 export default () => {
   return (

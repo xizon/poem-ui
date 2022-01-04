@@ -10,7 +10,7 @@
 
 ### Multiple-Level Dropdown Menu
 ```js
-import MultilevelDropdownMenu from 'poem-ui/MultilevelDropdownMenu';
+import { MultilevelDropdownMenu } from 'poem-ui/MultilevelDropdownMenu';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ Array configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import MultilevelDropdownMenu from 'poem-ui/MultilevelDropdownMenu';
+import { MultilevelDropdownMenu } from 'poem-ui/MultilevelDropdownMenu';
 
 const menuListData = [{
 	title: "Top level 1",

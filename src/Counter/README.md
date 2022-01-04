@@ -10,7 +10,7 @@
 
 ### Counter
 ```js
-import Counter from 'poem-ui/Counter';
+import { Counter } from 'poem-ui/Counter';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ import Counter from 'poem-ui/Counter';
 
 ```js
 import React from 'react';
-import Counter from 'poem-ui/Counter';
+import { Counter } from 'poem-ui/Counter';
 
 export default () => {
   return (

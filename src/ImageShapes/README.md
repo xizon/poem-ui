@@ -10,7 +10,7 @@
 
 ### Image Shapes
 ```js
-import ImageShapes from 'poem-ui/ImageShapes';
+import { ImageShapes } from 'poem-ui/ImageShapes';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ Note: SVG code must be a single path, the `containerWidth` and `containerHeight`
 
 ```js
 import React from 'react';
-import ImageShapes from 'poem-ui/ImageShapes';
+import { ImageShapes } from 'poem-ui/ImageShapes';
 
 export default () => {
   return (

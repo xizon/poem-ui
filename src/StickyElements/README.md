@@ -10,7 +10,7 @@
 
 ### Sticky Elements
 ```js
-import Sticky from 'poem-ui/StickyElements';
+import { Sticky } from 'poem-ui/StickyElements';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ The elements you actually want to stick should be wrapped in the `<Sticky />` ta
 
 ```js
 import React from 'react';
-import Sticky from 'poem-ui/StickyElements';
+import { Sticky } from 'poem-ui/StickyElements';
 
 export default () => {
   return (

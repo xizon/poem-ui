@@ -10,7 +10,7 @@
 
 ### Gallery
 ```js
-import Gallery from 'poem-ui/Gallery';
+import { Gallery } from 'poem-ui/Gallery';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ Array configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import Gallery from 'poem-ui/Gallery';
+import { Gallery } from 'poem-ui/Gallery';
 
 export default () => {
   return (

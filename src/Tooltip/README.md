@@ -10,7 +10,7 @@
 
 ### Tooltip
 ```js
-import Tooltip from 'poem-ui/Tooltip';
+import { Tooltip } from 'poem-ui/Tooltip';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ import Tooltip from 'poem-ui/Tooltip';
 
 ```js
 import React from 'react';
-import Tooltip from 'poem-ui/Tooltip';
+import { Tooltip } from 'poem-ui/Tooltip';
 
 export default () => {
   return (

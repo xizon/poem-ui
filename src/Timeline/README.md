@@ -10,7 +10,7 @@
 
 ### Timeline
 ```js
-import Timeline from 'poem-ui/Timeline';
+import { Timeline } from 'poem-ui/Timeline';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ Array configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import Timeline from 'poem-ui/Timeline';
+import { Timeline } from 'poem-ui/Timeline';
 
 
 const data = [

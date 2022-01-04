@@ -10,7 +10,7 @@
 
 ### Mousewheel Interaction
 ```js
-import MousewheelInteraction from 'poem-ui/MousewheelInteraction';
+import { MousewheelInteraction } from 'poem-ui/MousewheelInteraction';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ import MousewheelInteraction from 'poem-ui/MousewheelInteraction';
 
 ```js
 import React from 'react';
-import MousewheelInteraction from 'poem-ui/MousewheelInteraction';
+import { MousewheelInteraction } from 'poem-ui/MousewheelInteraction';
 
 export default () => {
   return (

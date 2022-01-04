@@ -10,7 +10,7 @@
 
 ### Show More Less
 ```js
-import ShowMoreLess from 'poem-ui/ShowMoreLess';
+import { ShowMoreLess } from 'poem-ui/ShowMoreLess';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ import ShowMoreLess from 'poem-ui/ShowMoreLess';
 
 ```js
 import React from 'react';
-import ShowMoreLess from 'poem-ui/ShowMoreLess';
+import { ShowMoreLess } from 'poem-ui/ShowMoreLess';
 
 export default () => {
   return (

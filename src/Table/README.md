@@ -11,7 +11,7 @@
 
 ### Table
 ```js
-import Table from 'poem-ui/Table';
+import { Table } from 'poem-ui/Table';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ JSON configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import Table from 'poem-ui/Table';
+import { Table } from 'poem-ui/Table';
 
 
 

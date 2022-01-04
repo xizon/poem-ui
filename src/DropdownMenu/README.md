@@ -10,7 +10,7 @@
 
 ### Dropdown Menu
 ```js
-import DropdownMenu from 'poem-ui/DropdownMenu';
+import { DropdownMenu } from 'poem-ui/DropdownMenu';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ Array configuration properties of the `options`:
 
 ```js
 import React from 'react';
-import DropdownMenu from 'poem-ui/DropdownMenu';
+import { DropdownMenu } from 'poem-ui/DropdownMenu';
 
 export default () => {
   return (

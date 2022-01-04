@@ -10,7 +10,7 @@
 
 ### Image Perspective Hover
 ```js
-import ImagePerspectiveHover from 'poem-ui/ImagePerspectiveHover';
+import { ImagePerspectiveHover } from 'poem-ui/ImagePerspectiveHover';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -34,7 +34,7 @@ Array configuration properties of the `data`:
 
 ```js
 import React from 'react';
-import ImagePerspectiveHover from 'poem-ui/ImagePerspectiveHover';
+import { ImagePerspectiveHover } from 'poem-ui/ImagePerspectiveHover';
 
 export default () => {
   return (

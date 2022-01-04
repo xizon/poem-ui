@@ -10,7 +10,7 @@
 
 ### Modal Dialog
 ```js
-import ModalDialog from 'poem-ui/ModalDialog';
+import { ModalDialog } from 'poem-ui/ModalDialog';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -33,7 +33,7 @@ import ModalDialog from 'poem-ui/ModalDialog';
 
 ```js
 import React from 'react';
-import ModalDialog from 'poem-ui/ModalDialog';
+import { ModalDialog } from 'poem-ui/ModalDialog';
 
 export default () => {
   return (

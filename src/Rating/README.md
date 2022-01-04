@@ -10,7 +10,7 @@
 
 ### Rating
 ```js
-import Rating from 'poem-ui/Rating';
+import { Rating } from 'poem-ui/Rating';
 ```
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ import Rating from 'poem-ui/Rating';
 
 ```js
 import React from 'react';
-import Rating from 'poem-ui/Rating';
+import { Rating } from 'poem-ui/Rating';
 
 export default () => {
   return (
