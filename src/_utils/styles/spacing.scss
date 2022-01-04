@@ -1,0 +1,68 @@
+/* ====================================================== 
+   <!-- Spacing -->                                
+/* ====================================================== */
+
+.poemui-spacing--s {
+	position: relative;
+	padding: $spacing-small 0;
+}
+
+.poemui-spacing--m {
+	position: relative;
+	padding: $spacing-medium 0;
+}
+
+
+.poemui-spacing--l {
+	position: relative;
+	padding: $spacing-large 0;
+}
+
+.poemui-spacing--no-top {
+	padding-top: 0 !important;
+}
+
+.poemui-spacing--no-bottom {
+	padding-bottom: 0 !important;
+}
+
+.poemui-spacing--googlemap {
+	padding-top: 0 !important;
+}
+
+/* Without spacing */
+.poemui-spacing--no {
+	padding: 0 !important;
+	margin: 0 !important;/* compatible with <p>, <h1>, <h2>, <h3>... */
+}
+
+
+
+@media all and (max-width: 768px) {
+
+	.poemui-spacing--s {
+		padding: $spacing-small-mobile 0;
+	}
+	
+	.poemui-spacing--m {
+		padding: $spacing-medium-mobile 0;
+	}
+
+	.poemui-spacing--l {
+		padding: $spacing-large-mobile 0;
+	}
+
+	.poemui-spacing--no-top {
+		padding-top: 0;
+	}
+	.poemui-spacing--no-bottom {
+		padding-bottom: 0;
+	}
+	.poemui-spacing--googlemap {
+		padding-top: 0;
+	}
+	.poemui-spacing--no {
+		padding: 0;
+	}
+
+}

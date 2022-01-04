@@ -1,0 +1,24 @@
+/* ====================================================== 
+   <!-- Typography -->            
+/* ====================================================== */
+
+/*
+ * 6. Vertical Text
+*/
+
+
+/* 
+ ---------------------------
+ 6. Vertical Text
+ ---------------------------
+ */ 
+.rtl .poemui-typo--vertical {
+
+	&:not(.poemui-typo--vertical-characters-line) {
+		writing-mode: vertical-lr;
+		transform: translateX(-.5rem);
+		
+	}
+	
+}
+

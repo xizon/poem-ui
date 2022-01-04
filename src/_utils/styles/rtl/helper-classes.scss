@@ -1,0 +1,146 @@
+/* ====================================================== 
+   <!-- Helper Classes -->                                 
+/* ====================================================== */
+
+
+/*
+ * 5. Element Floating
+ * 6. Element Alignment
+ * 12. Tip Bubble
+ * 14. Position
+*/
+
+
+
+/* 
+ ---------------------------
+ 5. Element Floating
+ ---------------------------
+ */ 
+.rtl .poemui-f-l {
+    float: right;
+}
+
+.rtl .poemui-f-r {
+    float: left;
+}
+/* 
+ ---------------------------
+ 6. Element Alignment
+ ---------------------------
+ */ 
+
+.rtl .poemui-t-r {
+    text-align: left;
+}
+
+.rtl .poemui-t-l {
+    text-align: right;
+}
+
+/* The breakpoint is the same as bootstrap 4 */
+/*
+--breakpoint-xs:0;
+--breakpoint-sm:576px;
+--breakpoint-md:768px;
+--breakpoint-lg:992px;
+--breakpoint-xl:1200px;
+*/
+@media all and (max-width: 576px) {
+	.rtl .poemui-t-r--sm {
+		text-align: left;
+	}
+
+	.rtl .poemui-t-l--sm {
+		text-align: right;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.rtl .poemui-t-r--md {
+		text-align: left;
+	}
+
+	.rtl .poemui-t-l--md {
+		text-align: right;
+	}
+}
+
+@media all and (max-width: 992px) {
+	.rtl .poemui-t-r--lg {
+		text-align: left;
+	}
+
+	.rtl .poemui-t-l--lg {
+		text-align: right;
+	}
+}
+
+
+@media all and (max-width: 1200px) {
+	.rtl .poemui-t-r--xl {
+		text-align: left;
+	}
+
+	.rtl .poemui-t-l--xl {
+		text-align: right;
+	}
+}
+
+
+/* 
+ ---------------------------
+ 12. Tip Bubble
+ ---------------------------
+ */ 
+.rtl .poemui-bubble {
+	margin-left: auto;
+	margin-right: .5rem;
+	right: auto;
+	left: 2.3rem;
+}
+
+@media all and (max-width: 768px) {
+	.rtl .poemui-bubble {
+		right: auto;
+		left: 1rem;
+	}
+
+}
+
+
+
+/* 
+ ---------------------------
+ 14. Position
+ ---------------------------
+ */ 
+
+/* Don't use `width: 100%` because it is wrong if the parent has padding. */
+.rtl .poemui-dir--left {
+    left: auto !important;
+	right: 0 !important;
+}
+.rtl .poemui-dir--right {
+	left: 0 !important;
+    right: auto !important;
+}
+
+.rtl .poemui-dir--top-left {
+    left: auto !important;
+	right: 0 !important;
+}
+.rtl .poemui-dir--top-right {
+	left: 0 !important;
+    right: auto !important;
+
+}
+.rtl .poemui-dir--bottom-left {
+    left: auto !important;
+	right: 0 !important;
+}
+.rtl .poemui-dir--bottom-right {
+	left: 0 !important;
+    right: auto !important;
+
+}

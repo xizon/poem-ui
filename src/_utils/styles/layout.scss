@@ -1,0 +1,132 @@
+/* ====================================================== 
+   <!-- Basic Layout Styles -->                                        
+/* ====================================================== */
+/*
+ * 1. Bootstrap 4.x                              - Do not use prefix "poemui-"
+ * 2. Material Container                         
+ * 3. Main Wrapper                          
+*/
+
+
+
+/* 
+ ---------------------------
+ 1. Bootstrap 4.x
+ ---------------------------
+ */ 
+/* New XL container for Bootstrap 4.x */
+.container {
+	width: auto;
+	max-width: 1140px;
+}
+
+@media all and (min-width: 1430px) {
+	.container {
+	    max-width: 1278px;
+	}
+}
+
+
+
+/* 
+ ---------------------------
+ 2. Material Container
+ ---------------------------
+ */ 
+
+.poemui-container__bg {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	&.poemui-container__bg--no-gutters {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	&.poemui-container__bg--white {
+		background: #fff;
+	}
+	
+	&.poemui-container__bg--shadow {
+		@include outer-shadow( 'regular' );
+	}
+	
+	&.poemui-container__bg--rounded-large {
+		border-radius: 15px;
+	}
+	
+	&.poemui-container__bg--rounded-medium {
+		border-radius: 7px;
+	}
+	
+	&.poemui-container__bg--rounded-small {
+		border-radius: 2px;
+	}
+	
+	&.poemui-container__bg--totop-large {
+		margin-top: -15rem;
+	}
+	
+	&.poemui-container__bg--totop-medium {
+		margin-top: -10rem;
+	}
+	
+	&.poemui-container__bg--totop-small {
+		margin-top: -5rem;
+	}
+	
+}
+
+
+
+@media all and (max-width: 768px) { 
+	
+	.poemui-container__bg {
+	
+		&.poemui-container__bg--totop-large {
+			margin-top: -7rem;
+		}
+
+		&.poemui-container__bg--totop-medium {
+			margin-top: -4rem;
+		}
+
+		&.poemui-container__bg--totop-small {
+			margin-top: -2rem;
+		}	
+		
+	}	
+}
+
+
+/* 
+ ---------------------------
+ 3. Main Wrapper 
+ ---------------------------
+ */ 
+/* Note: Do not use the "transform" property, otherwise it may affect the internal elements */
+.poemui-wrapper {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Show Toolbar when viewing site with WordPress */
+.admin-bar .poemui-wrapper {
+	margin-top: 32px;
+	
+}
+
+/* Admin bar becomes taller on smaller devices with WordPress */
+@media all and (max-width: 782px) {
+    .admin-bar .poemui-wrapper {
+         margin-top: 46px;
+    }
+}
+
