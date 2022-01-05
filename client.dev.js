@@ -13,6 +13,21 @@ import { TableSorter } from 'poem-ui/TableSorter';
 import { FileField  } from 'poem-ui/Form';
 import { Card } from 'poem-ui/Card';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ModalDialog/styles.css';
+import 'poem-ui/Lightbox/styles.css';
+import 'poem-ui/Button/styles.css';
+import 'poem-ui/Tabs/styles.css';
+import 'poem-ui/Accordion/styles.css';
+import 'poem-ui/MultilevelDropdownMenu/styles.css';
+import 'poem-ui/TableSorter/styles.css';
+import 'poem-ui/Form/styles.css';
+import 'poem-ui/Card/styles.css';
+
+
 ReactDOM.render(
   <>
     <div style={{padding:"100px"}}>

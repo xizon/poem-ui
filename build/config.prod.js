@@ -5,6 +5,8 @@ const path = require('path');
 const json = require('../package.json');
 const moment = require('moment');
 const TerserPlugin = require("terser-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const glob = require('glob');
 const fs = require('fs');
 
@@ -37,17 +39,28 @@ class MyPluginCompiledFunction {
 			packages.map( ( comPath, index ) => {
 				
 				const newDir = path.resolve(__dirname, `../${comNames[index]}`);
-				const oldPath = path.resolve(__dirname, `../dist/cjs/${comNames[index]}.js`);
-				const newPath = `${newDir}/index.js`;
-				
 				if (!fs.existsSync(newDir)){
 					fs.mkdirSync(newDir);
 				}
 
-				fs.rename(oldPath, newPath, function (err) {
-					if (err) throw err
-					console.log(`Successfully ${comNames[index]}.js`);
+
+				//JS files
+				const oldPathJS = path.resolve(__dirname, `../dist/cjs/${comNames[index]}.js`);
+				const newPathJS = `${newDir}/index.js`;
+				fs.rename(oldPathJS, newPathJS, function (err) {
+					//if (err) throw err
+					console.log(`Successfully ./${comNames[index]}/index.js`);
 				});
+
+
+				//CSS files
+				const oldPathCSS = path.resolve(__dirname, `../dist/cjs/${comNames[index]}.css`);
+				const newPathCSS = `${newDir}/styles.css`;
+				fs.rename(oldPathCSS, newPathCSS, function (err) {
+					//if (err) throw err
+					console.log(`Successfully ./${comNames[index]}/styles.css`);
+				});
+
 
 
 			});
@@ -101,7 +114,7 @@ const webpackConfig = {
 		function ({ context, request }, callback) {
 
 			if ( request.indexOf( '@/components/_utils/styles' ) >= 0 ) {
-				return callback(null, 'commonjs ' + '../UtilsStyles');
+				return callback(null, 'commonjs ' + '../UtilsReset');
 			}
 
 			if ( request.indexOf( '@/components/_utils/_all' ) >= 0 ) {
@@ -137,6 +150,26 @@ const webpackConfig = {
 				test: /\.min\.js$/i
 			}),
 
+
+			new MiniCssExtractPlugin({
+				// Options similar to the same options in webpackOptions.output
+				// both options are optional
+				filename: '../cjs/[name].css'
+			}),
+			new CssMinimizerPlugin({
+				test:/\.min\.css$/i,
+				parallel: true,
+				minimizerOptions: {
+					preset: [
+						"default",
+						{
+							discardComments: { removeAll: true },
+						},
+					],
+				},
+			}),
+
+
 		],
 		
 	},
@@ -170,8 +203,15 @@ const webpackConfig = {
 					path.resolve(__dirname, '../node_modules'),
 				],
 				use: [
+					// fallback to style-loader in development
 					{
-						loader: "style-loader"  // creates style nodes from JS strings ( Step 3 )
+						loader: MiniCssExtractPlugin.loader, //Extracts CSS into separate files  ( Step 3 )
+						options: {
+							// you can specify a publicPath here
+							// by default it use publicPath in webpackOptions.output
+							publicPath: path.resolve(__dirname, '../dist')
+	
+						}
 					},
 					{
 						loader: "css-loader",   // interprets @import and url() and will resolve them. 

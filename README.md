@@ -81,7 +81,7 @@ Here is a table of the components and their status.
 
 To start using the components, please follow these steps:
 
-1. Install package
+### 1. Install package
 
 ```sh
 npm i poem-ui
@@ -90,13 +90,21 @@ npm i poem-ui
 [https://www.npmjs.com/package/poem-ui](https://www.npmjs.com/package/poem-ui)
 
 
-2. Now you can start using components like so!:
+### 2. Now you can start using components like so:
 
 **❤️ Recommend ❤️** Use modularized (supports ES modules tree shaking by default for JS part):
+
+> You can manually import the stylesheet as needed.
 
 ```jsx
 import React from 'react';
 import { Button, ButtonGroup } from 'poem-ui/Button';
+
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Button/styles.css';
 
 function Example() {
   return <Button border="thin" spacing="bottom" background="primary" corners="pill" size="medium" id="app-btn-1" href="#" data-title="button" onClick={(e) => {e.preventDefault(); alert( e.target.id );} }>Click me to view ID!</Button>
@@ -118,6 +126,12 @@ Or
 ```jsx
 import React from 'react';
 import { Button } from 'poem-ui';
+
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Button/styles.css';
 
 function Example() {
   return <Button border="thin" spacing="bottom" background="primary" corners="pill" size="medium" id="app-btn-1" href="#" data-title="button" onClick={(e) => {e.preventDefault(); alert( e.target.id );} }>Click me to view ID!</Button>
@@ -193,9 +207,10 @@ $ sudo npm rebuild node-sass
 
 ## Changelog
 
-#### = 0.0.3 (January 5, 2022) =
+#### = 0.0.4 (January 5, 2022) =
 
 * Optimized the file size compiled by babel.
+* Separate styles and independent import style manually.
 
 
 #### = 0.0.1 (January 3, 2022) =
