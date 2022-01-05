@@ -53,6 +53,11 @@ It accepts all props(include data-* attributes) which native div support.
 import React from 'react';
 import { Tabs, TabList, TabPanel } from 'poem-ui/Tabs';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Tabs/styles.css';
 
 export default () => {
   return (

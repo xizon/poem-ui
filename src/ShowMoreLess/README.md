@@ -30,6 +30,12 @@ import { ShowMoreLess } from 'poem-ui/ShowMoreLess';
 import React from 'react';
 import { ShowMoreLess } from 'poem-ui/ShowMoreLess';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ShowMoreLess/styles.css';
+
 export default () => {
   return (
     <>

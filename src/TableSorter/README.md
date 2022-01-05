@@ -41,7 +41,11 @@ JSON configuration properties of the `data`:
 import React from 'react';
 import { TableSorter } from 'poem-ui/TableSorter';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
 
+//import component styles
+import 'poem-ui/TableSorter/styles.css';
 
 const data1 = {
 	"headers": [

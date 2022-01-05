@@ -39,6 +39,11 @@ import { Pagination } from 'poem-ui/Pagination';
 import React from 'react';
 import { Pagination } from 'poem-ui/Pagination';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Pagination/styles.css';
 
 function gotoPageNumber( number ) {
 	//`number` comes from the public parameter thrown by the component `<Pagination />`

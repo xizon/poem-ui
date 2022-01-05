@@ -33,6 +33,11 @@ JSON configuration properties of the `data`:
 import React from 'react';
 import { TableGrid } from 'poem-ui/TableGrid';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/TableGrid/styles.css';
 
 const data1 = {
 	"headers": ["COLUMN TITLE 1","COLUMN TITLE 2","COLUMN TITLE 3"],

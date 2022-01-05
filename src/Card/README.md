@@ -38,6 +38,12 @@ import { Card } from 'poem-ui/Card';
 import React from 'react';
 import { Card } from 'poem-ui/Card';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Card/styles.css';
+
 
 export default () => {
   return (

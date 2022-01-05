@@ -32,6 +32,12 @@ import { Parallax } from 'poem-ui/Parallax';
 import React from 'react';
 import { Parallax } from 'poem-ui/Parallax';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Parallax/styles.css';
+
 export default () => {
   return (
     <>

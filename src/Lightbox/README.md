@@ -30,6 +30,12 @@ import { Lightbox } from 'poem-ui/Lightbox';
 import React from 'react';
 import { Lightbox } from 'poem-ui/Lightbox';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Lightbox/styles.css';
+
 export default () => {
   return (
     <>

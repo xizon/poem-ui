@@ -41,6 +41,11 @@ JSON configuration properties of the `config`:
 import React from 'react';
 import { ScrollReveal } from 'poem-ui/ScrollReveal';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ScrollReveal/styles.css';
 
 export default () => {
 	

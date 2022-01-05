@@ -46,6 +46,11 @@ It accepts all props(include data-* attributes) which native div support.
 import React from 'react';
 import { TabsAnimated, TabList, TabPanel } from 'poem-ui/TabsAnimated';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/TabsAnimated/styles.css';
 
 export default () => {
   return (

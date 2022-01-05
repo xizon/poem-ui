@@ -28,6 +28,12 @@ import { Tooltip } from 'poem-ui/Tooltip';
 import React from 'react';
 import { Tooltip } from 'poem-ui/Tooltip';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Tooltip/styles.css';
+
 export default () => {
   return (
     <>

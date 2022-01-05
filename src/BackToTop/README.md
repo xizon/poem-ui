@@ -29,6 +29,12 @@ Scroll the page down to preview. The button is in the bottom right corner of the
 import React from 'react';
 import { BackToTop } from 'poem-ui/BackToTop';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/BackToTop/styles.css';
+
 export default () => {
   return (
     <>

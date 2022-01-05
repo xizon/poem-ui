@@ -35,6 +35,12 @@ import { ModalDialog } from 'poem-ui/ModalDialog';
 import React from 'react';
 import { ModalDialog } from 'poem-ui/ModalDialog';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ModalDialog/styles.css';
+
 export default () => {
   return (
     <>

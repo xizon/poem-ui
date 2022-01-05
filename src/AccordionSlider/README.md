@@ -46,6 +46,11 @@ import { AccordionSliderItem } from 'poem-ui/AccordionSlider';
 import React from 'react';
 import { AccordionSlider, AccordionSliderItem } from 'poem-ui/AccordionSlider';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/AccordionSlider/styles.css';
 
 export default () => {
   return (

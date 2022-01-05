@@ -40,6 +40,13 @@ import { AccordionItem } from 'poem-ui/Accordion';
 import React from 'react';
 import { Accordion, AccordionItem } from 'poem-ui/Accordion';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Accordion/styles.css';
+
+
 export default () => {
   return (
     <>

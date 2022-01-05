@@ -34,6 +34,12 @@ import { ListBulletedItem } from 'poem-ui/ListBulleted';
 import React from 'react';
 import { ListBulleted, ListBulletedItem } from 'poem-ui/ListBulleted';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ListBulleted/styles.css';
+
 export default () => {
   return (
     <>

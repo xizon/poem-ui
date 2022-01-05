@@ -37,6 +37,12 @@ Array configuration properties of the `options`:
 import React from 'react';
 import { DropdownMenu } from 'poem-ui/DropdownMenu';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/DropdownMenu/styles.css';
+
 export default () => {
   return (
     <>

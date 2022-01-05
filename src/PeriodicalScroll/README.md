@@ -35,6 +35,12 @@ import { PeriodicalScrollItem } from 'poem-ui/PeriodicalScroll';
 import React from 'react';
 import { PeriodicalScroll, PeriodicalScrollItem } from 'poem-ui/PeriodicalScroll';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/PeriodicalScroll/styles.css';
+
 export default () => {
   return (
     <>

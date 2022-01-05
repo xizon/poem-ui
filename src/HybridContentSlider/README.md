@@ -43,6 +43,12 @@ import { HybridContentSliderItem } from 'poem-ui/HybridContentSlider';
 import React from 'react';
 import { HybridContentSlider, HybridContentSliderItem } from 'poem-ui/HybridContentSlider';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/HybridContentSlider/styles.css';
+
 export default () => {
     return (
         <>

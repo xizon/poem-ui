@@ -42,7 +42,11 @@ JSON configuration properties of the `data`:
 import React from 'react';
 import { Table } from 'poem-ui/Table';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
 
+//import component styles
+import 'poem-ui/Table/styles.css';
 
 const data1 = {
 	"fields": [

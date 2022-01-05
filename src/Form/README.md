@@ -351,6 +351,11 @@ import {
 	FileField
 } from 'poem-ui/Form';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Form/styles.css';
 
 
 export default () => {

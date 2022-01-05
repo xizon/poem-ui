@@ -34,6 +34,12 @@ Array configuration properties of the `data`:
 import React from 'react';
 import { MultilevelDropdownMenu } from 'poem-ui/MultilevelDropdownMenu';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/MultilevelDropdownMenu/styles.css';
+
 const menuListData = [{
 	title: "Top level 1",
 	link: "#",

@@ -34,6 +34,12 @@ Array configuration properties of the `data`:
 import React from 'react';
 import { Gallery } from 'poem-ui/Gallery';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Gallery/styles.css';
+
 export default () => {
   return (
     <>

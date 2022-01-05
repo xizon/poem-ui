@@ -48,6 +48,12 @@ import { ButtonGroup } from 'poem-ui/Button';
 import React from 'react';
 import { Button, ButtonGroup } from 'poem-ui/Button';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Button/styles.css';
+
 
 export default () => {
   return (

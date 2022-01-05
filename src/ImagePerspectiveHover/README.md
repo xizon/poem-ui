@@ -36,6 +36,12 @@ Array configuration properties of the `data`:
 import React from 'react';
 import { ImagePerspectiveHover } from 'poem-ui/ImagePerspectiveHover';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ImagePerspectiveHover/styles.css';
+
 export default () => {
   return (
     <>

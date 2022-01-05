@@ -55,6 +55,13 @@ import React from 'react';
 import { Navigation } from 'poem-ui/Navigation';
 import { NavLink } from 'react-router-dom';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Navigation/styles.css';
+
+
 const menuListData = [
 	{
 		"title": <><li><NavLink data-route="true" to="/components-demo">Route Link</NavLink></li></>,

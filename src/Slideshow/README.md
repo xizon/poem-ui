@@ -48,6 +48,12 @@ If you want to modify the transition-duration property, please directly modify t
 import React from 'react';
 import { Slideshow, SlideshowItem } from 'poem-ui/Slideshow';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Slideshow/styles.css';
+
 export default () => {
     return (
         <>

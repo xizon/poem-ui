@@ -142,6 +142,12 @@ A successful response returns the details of the callback such as Sample Request
 import React from 'react';
 import { CascadingDropDownList } from 'poem-ui/CascadingDropDownList';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/CascadingDropDownList/styles.css';
+
 export default () => {
   return (
     <>

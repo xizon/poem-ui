@@ -39,6 +39,12 @@ Note: SVG code must be a single path, the `containerWidth` and `containerHeight`
 import React from 'react';
 import { ImageShapes } from 'poem-ui/ImageShapes';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ImageShapes/styles.css';
+
 export default () => {
   return (
     <>

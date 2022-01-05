@@ -40,6 +40,12 @@ import { GridColumn } from 'poem-ui/Grid';
 import React from 'react';
 import { Grid, GridColumn } from 'poem-ui/Grid';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/Grid/styles.css';
+
 export default () => {
   return (
     <>

@@ -33,6 +33,12 @@ import { SeamlessScrollingElementItem } from 'poem-ui/SeamlessScrollingElement';
 import React from 'react';
 import { SeamlessScrollingElement, SeamlessScrollingElementItem } from 'poem-ui/SeamlessScrollingElement';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/SeamlessScrollingElement/styles.css';
+
 export default () => {
   return (
     <>

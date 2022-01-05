@@ -28,6 +28,12 @@ import { ProgressBar } from 'poem-ui/ProgressBar';
 import React from 'react';
 import { ProgressBar } from 'poem-ui/ProgressBar';
 
+//import common styles (CSS reset library)
+import 'poem-ui/UtilsReset/styles.css'; 
+
+//import component styles
+import 'poem-ui/ProgressBar/styles.css';
+
 export default () => {
   return (
     <>
