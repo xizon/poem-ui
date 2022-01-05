@@ -193,6 +193,10 @@ $ sudo npm rebuild node-sass
 
 ## Changelog
 
+#### = 0.0.3 (January 5, 2022) =
+
+* Optimized the file size compiled by babel.
+
 
 #### = 0.0.1 (January 3, 2022) =
 

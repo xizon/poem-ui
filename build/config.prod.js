@@ -45,9 +45,10 @@ class MyPluginCompiledFunction {
 				}
 
 				fs.rename(oldPath, newPath, function (err) {
-				  if (err) throw err
-				  console.log(`Successfully ${comNames[index]}.js`);
+					if (err) throw err
+					console.log(`Successfully ${comNames[index]}.js`);
 				});
+
 
 			});
 
@@ -99,14 +100,21 @@ const webpackConfig = {
 		// Function	
 		function ({ context, request }, callback) {
 
-			// Use the same './_all' path to prohibit loading of general style sheets
 			if ( request.indexOf( '@/components/_utils/styles' ) >= 0 ) {
 				return callback(null, 'commonjs ' + '../UtilsStyles');
 			}
 
 			if ( request.indexOf( '@/components/_utils/_all' ) >= 0 ) {
-				return callback(null, 'commonjs ' + '../UtilsScripts');
+				return callback(null, 'commonjs ' + '../UtilsScriptsHelpers');
 			}	
+			if ( request.indexOf( '@/components/_plugins/_lib-gsap' ) >= 0 ) {
+				return callback(null, 'commonjs ' + '../UtilsScriptsGSAP');
+			}	
+			if ( request.indexOf( '@/components/_plugins/_lib-scrolllock' ) >= 0 ) {
+				return callback(null, 'commonjs ' + '../UtilsScriptsBSL');
+			}			
+
+			
 			callback();
 		},
 		// Regex
@@ -140,7 +148,9 @@ const webpackConfig = {
                 exclude: path.resolve(__dirname, '../node_modules' ),
                 options: {  
 				  'presets': [
-					  '@babel/preset-env',
+					  ["@babel/preset-env", { 
+						  "targets": {"esmodules": true}
+					  }],
 					  '@babel/preset-react',
 					  '@babel/preset-typescript',
 					  {

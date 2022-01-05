@@ -86,7 +86,9 @@ typings/
 
 
 # Components List
-UtilsScripts/*.js
+UtilsScriptsBSL/*.js
+UtilsScriptsGSAP/*.js
+UtilsScriptsHelpers/*.js
 UtilsStyles/*.js
 Accordion/*.js
 AccordionSlider/*.js

@@ -90,8 +90,6 @@ tsconfig.tsbuildinfo
 tsconfig.json
 babel.config.js
 client.dev.js
-LICENSE
-README.md
 package-lock.json
 test/
 build/

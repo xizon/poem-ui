@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import { ModalDialog, Lightbox, Button, ButtonGroup, Tabs, TabList, TabPanel, Accordion, AccordionItem, MultilevelDropdownMenu, TableSorter, FileField  } from 'poem-ui';
+//import { ModalDialog, Lightbox, Button, ButtonGroup, Tabs, TabList, TabPanel, Accordion, AccordionItem, MultilevelDropdownMenu, TableSorter, FileField, Card  } from 'poem-ui';
 
 import { ModalDialog } from 'poem-ui/ModalDialog';
 import { Lightbox } from 'poem-ui/Lightbox';
@@ -11,6 +11,7 @@ import { Accordion, AccordionItem} from 'poem-ui/Accordion';
 import { MultilevelDropdownMenu } from 'poem-ui/MultilevelDropdownMenu';
 import { TableSorter } from 'poem-ui/TableSorter';
 import { FileField  } from 'poem-ui/Form';
+import { Card } from 'poem-ui/Card';
 
 ReactDOM.render(
   <>
@@ -232,6 +233,9 @@ ReactDOM.render(
         <hr />
         <FileField label="Drag and drop a file here" name="file-field-name-1" />
 
+
+        <hr />
+        <Card type="thumb" avatar={`https://uiux.cc/wp-content/uploads/2017/01/plugin4-1.jpg`} bgConfig={null} title="Title" titleEllipsis={true} subTitle={<a href="https://uiux.cc" target="_blank">@https://uiux.cc</a>} btnIcon={<i className="icon-ellipsis-h" aria-hidden="true"></i>}>Harum, ad porro molestiae corporis natus aut non fugit. Recusandae, reprehenderit, voluptate voluptas reiciendis voluptatum tempora vero vel libero facere fuga maiores ratione eaque ad illum porro dignissimos sit eos.</Card>
 
     </div>
 
