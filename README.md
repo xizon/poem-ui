@@ -17,64 +17,38 @@ Some components use third-party plug-ins to improve the interaction. You can rem
 
 Here is a table of the components and their status.
 
-  - [Accordion](src/Accordion/README.md)
-  - [Accordion Slider](src/AccordionSlider/README.md)
-  - [Back To Top](src/BackToTop/README.md)
-  - [Button](src/Button/README.md)
-  - [Card](src/Card/README.md)
-  - [Cascading DropDown List](src/CascadingDropDownList/README.md)
-  - [Content Placeholder](src/ContentPlaceholder/README.md)
-  - [Counter](src/Counter/README.md)
-  - [Dropdown Menu](src/DropdownMenu/README.md)
-  - [Form](src/Form/README.md)
-    - [Input](src/Form/README.md#input)
-    - [Password Input](src/Form/README.md#password-input)
-    - [Merge Input](src/Form/README.md#merge-input)
-    - [Tag Input](src/Form/README.md#tag-input)
-    - [Textarea](src/Form/README.md#textarea)
-    - [Select](src/Form/README.md#select)
-    - [Custom Select](src/Form/README.md#custom-select)
-    - [Checkbox](src/Form/README.md#checkbox)
-    - [Radio](src/Form/README.md#radio)
-    - [Multi Select](src/Form/README.md#multi-select)
-    - [Single Select](src/Form/README.md#single-select)
-    - [Date](src/Form/README.md#date)
-    - [Number](src/Form/README.md#number)
-    - [Switch](src/Form/README.md#switch)
-    - [Dynamic Fields](src/Form/README.md#dynamic-fields)
-    - [File](src/Form/README.md#file)
-    - [File Field](src/Form/README.md#file-field)
 
-  - [Gallery](src/Gallery/README.md)
-  - [Grid](src/Grid/README.md)
-  - [Hybrid Content Slider](src/HybridContentSlider/README.md)
-  - [Image Perspective Hover](src/ImagePerspectiveHover/README.md)
-  - [Image Shapes](src/ImageShapes/README.md)
-  - [Infinite Scroll](src/InfiniteScroll/README.md)
-  - [Lightbox](src/Lightbox/README.md)
-  - [List Bulleted](src/ListBulleted/README.md)
-  - [Modal Dialog](src/ModalDialog/README.md)
-  - [Mousewheel Interaction](src/MousewheelInteraction/README.md)
-  - [Multilevel Dropdown Menu](src/MultilevelDropdownMenu/README.md)
-  - [Navigation](src/Navigation/README.md)
-  - [Pagination](src/Pagination/README.md)
-  - [Parallax](src/Parallax/README.md)
-  - [Periodical Scroll](src/PeriodicalScroll/README.md)
-  - [Progress Bar](src/ProgressBar/README.md)
-  - [Rating](src/Rating/README.md)
-  - [Scroll Reveal](src/ScrollReveal/README.md)
-  - [Seamless Scrolling Element](src/SeamlessScrollingElement/README.md)
-  - [Show More Less](src/ShowMoreLess/README.md)
-  - [Slideshow](src/Slideshow/README.md)
-  - [Sticky Elements](src/StickyElements/README.md)
-  - [Table](src/Table/README.md)
-  - [Table Grid](src/TableGrid/README.md)
-  - [Table Sorter](src/TableSorter/README.md)
-  - [Tabs](src/Tabs/README.md)
-  - [Tabs Animated](src/TabsAnimated/README.md)
-  - [Timeline](src/Timeline/README.md)
-  - [Toaster](src/Toaster/README.md)
-  - [Tooltip](src/Tooltip/README.md)
+| WEB ELEMENTS | FORMS | INTERACTION | LAYOUT | NAVIGATION |
+| --- | --- | --- | --- | --- |
+| [Accordion](src/Accordion/README.md) | [Input](src/Form/README.md#input) | [Infinite Scroll](src/InfiniteScroll/README.md) | [Grid](src/Grid/README.md) | [Cascading DropDown List](src/CascadingDropDownList/README.md)  | 
+| [Accordion Slider](src/AccordionSlider/README.md) | [Password Input](src/Form/README.md#password-input) | [Image Perspective Hover](src/ImagePerspectiveHover/README.md) | [Gallery](src/Gallery/README.md) | [Dropdown Menu](src/DropdownMenu/README.md)  | 
+| [Back To Top](src/BackToTop/README.md) | [Merge Input](src/Form/README.md#merge-input) | [Mousewheel Interaction](src/MousewheelInteraction/README.md) |  | [Multilevel Dropdown Menu](src/MultilevelDropdownMenu/README.md)  | 
+| [Button](src/Button/README.md) | [Tag Input](src/Form/README.md#tag-input) | [Parallax](src/Parallax/README.md) |  | [Navigation](src/Navigation/README.md)  | 
+| [Card](src/Card/README.md) | [Textarea](src/Form/README.md#textarea) | [Scroll Reveal](src/ScrollReveal/README.md) |  |  | 
+| [Content Placeholder](src/ContentPlaceholder/README.md) | [Select](src/Form/README.md#select) | [Sticky Elements](src/StickyElements/README.md) |  |  | 
+| [Counter](src/Counter/README.md) | [Custom Select](src/Form/README.md#custom-select) |  |  |  | 
+| [Hybrid Content Slider](src/HybridContentSlider/README.md) | [Checkbox](src/Form/README.md#checkbox) |  |  |  | 
+| [Image Shapes](src/ImageShapes/README.md) | [Radio](src/Form/README.md#radio) |  |  |  | 
+| [Lightbox](src/Lightbox/README.md) | [Multi Select](src/Form/README.md#multi-select) |  |  |  | 
+| [List Bulleted](src/ListBulleted/README.md) | [Single Select](src/Form/README.md#single-select) |  |  |  | 
+| [Modal Dialog](src/ModalDialog/README.md) | [Date](src/Form/README.md#date) |  |  |  | 
+| [Pagination](src/Pagination/README.md) | [Number](src/Form/README.md#number) |  |  |  | 
+| [Periodical Scroll](src/PeriodicalScroll/README.md) | [Switch](src/Form/README.md#switch) |  |  |  | 
+| [Progress Bar](src/ProgressBar/README.md) | [Dynamic Fields](src/Form/README.md#dynamic-fields) |  |  |  | 
+| [Rating](src/Rating/README.md) | [File](src/Form/README.md#file) |  |  |  | 
+| [Seamless Scrolling Element](src/SeamlessScrollingElement/README.md) | [File Field](src/Form/README.md#file-field) |  |  |  | 
+| [Show More Less](src/ShowMoreLess/README.md) |  |  |  |  | 
+| [Slideshow](src/Slideshow/README.md) |  |  |  |  | 
+| [Table](src/Table/README.md) |  |  |  |  | 
+| [Table Grid](src/TableGrid/README.md) |  |  |  |  | 
+| [Table Sorter](src/TableSorter/README.md) |  |  |  |  | 
+| [Tabs](src/Tabs/README.md) |  |  |  |  | 
+| [Tabs Animated](src/TabsAnimated/README.md) |  |  |  |  | 
+| [Timeline](src/Timeline/README.md) |  |  |  |  | 
+| [Toaster](src/Toaster/README.md) |  |  |  |  | 
+| [Tooltip](src/Tooltip/README.md) |  |  |  |  | 
+
+
 
 
 ## Usage
