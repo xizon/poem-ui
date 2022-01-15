@@ -203,13 +203,16 @@ const webpackConfig = {
 					path.resolve(__dirname, '../node_modules'),
 				],
 				use: [
-					// fallback to style-loader in development
+					/**
+					 * Note:
+					 * You can use `style-loader` to inject CSS into the DOM to generate a final js file
+					 */
 					{
 						loader: MiniCssExtractPlugin.loader, //Extracts CSS into separate files  ( Step 3 )
 						options: {
 							// you can specify a publicPath here
 							// by default it use publicPath in webpackOptions.output
-							publicPath: path.resolve(__dirname, '../dist')
+							publicPath: '../dist/'
 	
 						}
 					},
